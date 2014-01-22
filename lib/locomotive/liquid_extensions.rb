@@ -7,5 +7,6 @@ end
 
 Liquid::Template.register_filter(Locomotive::LiquidExtensions::Filters::Math)
 Liquid::Template.register_filter(Locomotive::LiquidExtensions::Filters::Sample)
+Liquid::Template.register_filter(Locomotive::LiquidExtensions::Filters::Time)
 # DEBUG
 # puts "[LocomotiveLiquidExtensions] tags and filters loaded"
