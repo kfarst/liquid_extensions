@@ -22,7 +22,7 @@ module Locomotive
 
           return input.to_s unless input.respond_to?(:strftime)
 
-          input = input.in_time_zone("UTC") if input.respond_to?(:in_time_zone)
+          input = input.utc
 
           I18n.l input, format: format, locale: locale
         end
